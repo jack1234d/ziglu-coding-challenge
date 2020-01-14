@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://ziglu_db:5432/postgres"
+    username: postgres
+    password: password
+
+ziglu:
+  rss-feed:
+    providers:
+      BBC_News_UK: http://feeds.bbci.co.uk/news/uk/rss.xml
+      BBC_News_Technology: http://feeds.bbci.co.uk/news/technology/rss.xml
+      Reuters_UK: http://feeds.reuters.com/reuters/UKdomesticNews?format=xml
+      Reuters_Technology: http://feeds.reuters.com/reuters/technologyNews?format=xml

@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    container_name: ziglu_db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+
+  ziglu-newsfeed:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: newsfeed
+    container_name: ziglu_app
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
