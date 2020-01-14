@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "31d5a15d-3150-4696-8bee-88d582686533",
+		"name": "NewsFeedApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "NewsFeed",
+			"item": [
+				{
+					"name": "Get news feed",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/newsfeed",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"newsfeed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get news feed Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/newsfeed",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"newsfeed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get news feed - filter provider",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/newsfeed?provider=BBC News&provider=Reuters UK",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"newsfeed"
+							],
+							"query": [
+								{
+									"key": "provider",
+									"value": "BBC News"
+								},
+								{
+									"key": "provider",
+									"value": "Reuters UK"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get news feed - filter category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/newsfeed?category=domesticNews",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"newsfeed"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "domesticNews"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get news feed - filter category and provider",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/newsfeed?category=technologyNews&provider=Reuters Technology",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"newsfeed"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "technologyNews"
+								},
+								{
+									"key": "provider",
+									"value": "Reuters Technology"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Articles",
+			"item": [
+				{
+					"name": "Get articles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/newsfeed",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"newsfeed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get articles - filter provider",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/articles?provider=BBC News&provider=Reuters UK",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"articles"
+							],
+							"query": [
+								{
+									"key": "provider",
+									"value": "BBC News"
+								},
+								{
+									"key": "provider",
+									"value": "Reuters UK"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get articles - filter category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/articles?category=domesticNews",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"articles"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "domesticNews"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get articles - filter category and provider",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/articles?category=technologyNews&provider=Reuters Technology",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"articles"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "technologyNews"
+								},
+								{
+									"key": "provider",
+									"value": "Reuters Technology"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Get categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/categories",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get providers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/providers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"providers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
